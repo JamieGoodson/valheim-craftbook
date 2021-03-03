@@ -1,4 +1,4 @@
-# valheim-craftbook
+# Valheim Craftbook
 
 ## Project setup
 ```
@@ -20,5 +20,11 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Import game items
+```
+./scrips/import-game-items.sh
+```
+This will convert game items from the CSV file at `./scripts/game-items.csv`
+into a JSON file in `./src/assets/game-items.json`.
+
+[Google Sheet link](https://docs.google.com/spreadsheets/d/1Zxi1O4QtnVXN6azM_WQPlbEOAT-FfkD7Lleer0weTkM/edit#gid=0)

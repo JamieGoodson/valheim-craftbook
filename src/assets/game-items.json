@@ -1,0 +1,327 @@
+{
+  "ElderBark": {
+    "id": "ElderBark",
+    "name": "Ancient bark",
+    "type": "resource"
+  },
+  "Barley": {
+    "id": "Barley",
+    "name": "Barley",
+    "type": "resource"
+  },
+  "Bloodbag": {
+    "id": "Bloodbag",
+    "name": "Bloodbag",
+    "type": "resource"
+  },
+  "Blueberries": {
+    "id": "Blueberries",
+    "name": "Blueberries",
+    "type": "resource"
+  },
+  "BoneFragments": {
+    "id": "BoneFragments",
+    "name": "Bone fragments",
+    "type": "resource"
+  },
+  "Carrot": {
+    "id": "Carrot",
+    "name": "Carrot",
+    "type": "resource"
+  },
+  "Chitin": {
+    "id": "Chitin",
+    "name": "Chitin",
+    "type": "resource"
+  },
+  "Cloudberry": {
+    "id": "Cloudberry",
+    "name": "Cloudberries",
+    "type": "resource"
+  },
+  "Coal": {
+    "id": "Coal",
+    "name": "Coal",
+    "type": "resource"
+  },
+  "FishCooked": {
+    "id": "FishCooked",
+    "name": "Cooked fish",
+    "type": "resource"
+  },
+  "CookedLoxMeat": {
+    "id": "CookedLoxMeat",
+    "name": "Cooked lox meat",
+    "type": "resource"
+  },
+  "SeprentMeat": {
+    "id": "SeprentMeat",
+    "name": "Cooked serpent meat",
+    "type": "resource"
+  },
+  "RoundLog": {
+    "id": "RoundLog",
+    "name": "Core wood",
+    "type": "resource"
+  },
+  "Dandelion": {
+    "id": "Dandelion",
+    "name": "Dandelion",
+    "type": "resource"
+  },
+  "DeerHide": {
+    "id": "DeerHide",
+    "name": "Deer hide",
+    "type": "resource"
+  },
+  "TrophyDraugrElite": {
+    "id": "TrophyDraugrElite",
+    "name": "Draugr elite trophy",
+    "type": "resource"
+  },
+  "Entrails": {
+    "id": "Entrails",
+    "name": "Entrails",
+    "type": "resource"
+  },
+  "Feathers": {
+    "id": "Feathers",
+    "name": "Feathers",
+    "type": "resource"
+  },
+  "FineWood": {
+    "id": "FineWood",
+    "name": "Fine wood",
+    "type": "resource"
+  },
+  "Flax": {
+    "id": "Flax",
+    "name": "Flax",
+    "type": "resource"
+  },
+  "Flint": {
+    "id": "Flint",
+    "name": "Flint",
+    "type": "resource"
+  },
+  "FreezeGland": {
+    "id": "FreezeGland",
+    "name": "Freeze gland",
+    "type": "resource"
+  },
+  "GreydwarfEye": {
+    "id": "GreydwarfEye",
+    "name": "Greydwarf eye",
+    "type": "resource"
+  },
+  "Guck": {
+    "id": "Guck",
+    "name": "Guck",
+    "type": "resource"
+  },
+  "HardAntler": {
+    "id": "HardAntler",
+    "name": "Hard antler",
+    "type": "resource"
+  },
+  "Honey": {
+    "id": "Honey",
+    "name": "Honey",
+    "type": "resource"
+  },
+  "LeatherScraps": {
+    "id": "LeatherScraps",
+    "name": "Leather scraps",
+    "type": "resource"
+  },
+  "LoxPelt": {
+    "id": "LoxPelt",
+    "name": "Lox pelt",
+    "type": "resource"
+  },
+  "Mushroom": {
+    "id": "Mushroom",
+    "name": "Mushroom",
+    "type": "resource"
+  },
+  "NeckTail": {
+    "id": "NeckTail",
+    "name": "Neck tail",
+    "type": "resource"
+  },
+  "Ooze": {
+    "id": "Ooze",
+    "name": "Ooze",
+    "type": "resource"
+  },
+  "Raspberry": {
+    "id": "Raspberry",
+    "name": "Raspberries",
+    "type": "resource"
+  },
+  "RawMeat": {
+    "id": "RawMeat",
+    "name": "Raw meat",
+    "type": "resource"
+  },
+  "Resin": {
+    "id": "Resin",
+    "name": "Resin",
+    "type": "resource"
+  },
+  "SerpentScale": {
+    "id": "SerpentScale",
+    "name": "Serpent scale",
+    "type": "resource"
+  },
+  "Stone": {
+    "id": "Stone",
+    "name": "Stone",
+    "type": "resource"
+  },
+  "Thistle": {
+    "id": "Thistle",
+    "name": "Thistle",
+    "type": "resource"
+  },
+  "TrollHide": {
+    "id": "TrollHide",
+    "name": "Troll Hide",
+    "type": "resource"
+  },
+  "Turnip": {
+    "id": "Turnip",
+    "name": "Turnip",
+    "type": "resource"
+  },
+  "WolfFang": {
+    "id": "WolfFang",
+    "name": "Wolf fang",
+    "type": "resource"
+  },
+  "WolfPelt": {
+    "id": "WolfPelt",
+    "name": "Wolf pelt",
+    "type": "resource"
+  },
+  "TrophyWolf": {
+    "id": "TrophyWolf",
+    "name": "Wolf trophy",
+    "type": "resource"
+  },
+  "Wood": {
+    "id": "Wood",
+    "name": "Wood",
+    "type": "resource"
+  },
+  "MushroomYellow": {
+    "id": "MushroomYellow",
+    "name": "Yellow mushroom",
+    "type": "resource"
+  },
+  "YmirRemains": {
+    "id": "YmirRemains",
+    "name": "Ymir flesh",
+    "type": "resource"
+  },
+  "Copper": {
+    "id": "Copper",
+    "name": "Copper",
+    "type": "resource"
+  },
+  "Tin": {
+    "id": "Tin",
+    "name": "Tin",
+    "type": "resource"
+  },
+  "Silver": {
+    "id": "Silver",
+    "name": "Silver",
+    "type": "resource"
+  },
+  "Iron": {
+    "id": "Iron",
+    "name": "Iron",
+    "type": "resource"
+  },
+  "Bronze": {
+    "id": "Bronze",
+    "name": "Bronze",
+    "type": "resource",
+    "requirements": [
+      {
+        "id": "Copper",
+        "quantity": 2
+      },
+      {
+        "id": "Tin",
+        "quantity": 1
+      }
+    ],
+    "tier": 1
+  },
+  "ArmorLeatherChest": {
+    "id": "ArmorLeatherChest",
+    "name": "Leather tunic",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "DeerHide",
+        "quantity": 6
+      }
+    ],
+    "tier": 2
+  },
+  "ArmorLeatherLegs": {
+    "id": "ArmorLeatherLegs",
+    "name": "Leather pants",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "DeerHide",
+        "quantity": 6
+      }
+    ],
+    "tier": 2
+  },
+  "ArmorRagsChest": {
+    "id": "ArmorRagsChest",
+    "name": "Rag tunic",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "LeatherScraps",
+        "quantity": 5
+      }
+    ],
+    "tier": 1
+  },
+  "ArmorRagsLegs": {
+    "id": "ArmorRagsLegs",
+    "name": "Rag pants",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "LeatherScraps",
+        "quantity": 5
+      }
+    ],
+    "tier": 1
+  },
+  "AxeFlint": {
+    "id": "AxeFlint",
+    "name": "Flint axe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 4
+      },
+      {
+        "id": "Flint",
+        "quantity": 6
+      }
+    ],
+    "tier": 1
+  }
+}
