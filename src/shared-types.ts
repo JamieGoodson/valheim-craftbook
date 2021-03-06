@@ -11,8 +11,10 @@ export type GameItem = {
 export type GameItems = { [key: string]: GameItem };
 
 export enum GameItemType {
-    RESOURCE = "resource",
-    TOOL = "tool",
-    WEAPON = "weapon",
-    ARMOR = "armor",
+  AMMO = "ammo",
+  ARMOR = "armor",
+  RESOURCE = "resource",
+  TOOL = "tool",
+  TROPHY = "trophy",
+  WEAPON = "weapon",
 }

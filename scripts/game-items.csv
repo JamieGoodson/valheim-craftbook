@@ -10,12 +10,10 @@ Cloudberry,Cloudberries,resource,,
 Coal,Coal,resource,,
 FishCooked,Cooked fish,resource,,
 CookedLoxMeat,Cooked lox meat,resource,,
-SeprentMeat,Cooked serpent meat,resource,,
+SerpentMeat,Cooked serpent meat,resource,,
 RoundLog,Core wood,resource,,
 Dandelion,Dandelion,resource,,
 DeerHide,Deer hide,resource,,
-,Drake trophy,resource,,
-TrophyDraugrElite,Draugr elite trophy,resource,,
 Entrails,Entrails,resource,,
 Feathers,Feathers,resource,,
 FineWood,Fine wood,resource,,
@@ -41,7 +39,6 @@ TrollHide,Troll Hide,resource,,
 Turnip,Turnip,resource,,
 WolfFang,Wolf fang,resource,,
 WolfPelt,Wolf pelt,resource,,
-TrophyWolf,Wolf trophy,resource,,
 Wood,Wood,resource,,
 MushroomYellow,Yellow mushroom,resource,,
 YmirRemains,Ymir flesh,resource,,
@@ -50,8 +47,99 @@ Tin,Tin,resource,,
 Silver,Silver,resource,,
 Iron,Iron,resource,,
 Bronze,Bronze,resource,1,"2 Copper, 1 Tin"
+BronzeX5,Bronze x5,resource,1,"10 Copper, 5 Tin"
+BronzeNails,Bronze nails x20,resource,1,1 Bronze
+SharpeningStone,Sharpening stone,resource,1,5 Stone
+Chain,Chain,resource,,
+Needle,Needle,resource,,
+Obsidian,Obsidian,resource,,
+BlackMetal,Black metal,resource,,
+LinenThread,Linen thread,resource,,
+TrophyWolf,Wolf trophy,trophy,,
+TrophyHatchling,Drake trophy,trophy,,
+TrophyDraugrElite,Draugr Elite trophy,trophy,,
+TrophyDeer,Deer trophy,trophy,,
 ArmorLeatherChest,Leather tunic,armor,2,6 DeerHide
 ArmorLeatherLegs,Leather pants,armor,2,6 DeerHide
 ArmorRagsChest,Rag tunic,armor,1,5 LeatherScraps
 ArmorRagsLegs,Rag pants,armor,1,5 LeatherScraps
+ArmorBronzeChest,Bronze plate cuirass,armor,1,"5 Bronze, 2 DeerHide"
+ArmorBronzeLegs,Bronze plate leggings,armor,1,"5 Bronze, 2 DeerHide"
+ArmorTrollChest,Troll leather tunic,armor,3,5 TrollHide
+ArmorTrollLegs,Troll leather pants,armor,3,5 TrollHide
+ArmorIronChest,Iron scale mail,armor,2,"20 Iron, 2 DeerHide"
+ArmorIronLegs,Iron greaves,armor,2,"20 Iron, 2 DeerHide"
+Torch,Torch,weapon,,"1 Wood, 1 Resin"
+ArmorWolfChest,Wolf armor chest,armor,2,"20 Silver, 5 WolfPelt, 1 Chain"
+ArmorWolfLegs,Wolf armor legs,armor,2,"20 Silver, 5 WolfPelt, 4 WolfFang"
+ArrowBronze,Bronzehead arrow x20,ammo,1,"8 Wood, 1 Bronze, 2 Feathers"
+ArrowFire,Fire arrow x20,ammo,2,"8 Wood, 8 Resin, 2 Feathers"
+ArrowFlint,Flinthead arrow x20,ammo,2,"8 Wood, 2 Flint, 2 Feathers"
+ArrowFrost,Frost arrow x20,ammo,4,"8 Wood, 4 Obsidian, 2 Feathers, 1 FreezeGland"
+ArrowIron,Ironhead arrow x20,ammo,2,"8 Wood, 1 Iron, 2 Feathers"
+ArrowNeedle,Needle arrow x20,ammo,4,"4 Needle, 2 Feathers"
+ArrowObsidian,Obsidian arrow x20,ammo,3,"8 Wood, 4 Obsidian, 2 Feathers"
+ArrowPoisin,Poisin arrow x20,ammo,3,"8 Wood, 5 Obsidian, 2 Feathers, 2 Ooze"
+ArrowSilver,Silver arrow x20,ammo,3,"8 Wood, 1 Silver, 2 Feathers"
+ArrowWood,Wood arrow x20,ammo,1,8 Wood
+AtgeirBlackmetal,Blackmetal atgeir,weapon,4,"10 FineWood, 30 BlackMetal, 5 LinenThread"
+AtgeirBronze,Bronze atgeir,weapon,1,"10 Wood, 8 Bronze, 2 LeatherScraps"
+AtgeirIron,Iron atgeir,weapon,2,"10 Wood, 30 Iron, 2 LeatherScraps"
+AxeBlackMetal,Blackmetal axe,tool,4,"6 FineWood, 20 BlackMetal, 5 LinenThread"
+AxeBronze,Bronze axe,tool,1,"4 Wood, 8 Bronze, 2 LeatherScraps"
 AxeFlint,Flint axe,tool,1,"4 Wood, 6 Flint"
+AxeIron,Iron axe,tool,2,"4 Wood, 20 Iron, 2 LeatherScraps"
+AxeStone,Sont axe,tool,,"5 Wood, 4 Stone"
+Battleaxe,Battleaxe,weapon,2,"30 ElderBark, 35 Iron, 4 LeatherScraps"
+BombOoze,Ooze bomb x5,ammo,1,"5 LeatherScraps, 10 Ooze, 3 Resin"
+Bow,Crude bow,weapon,1,"10 Wood, 8 LeatherScraps"
+BowDraugrFang,Draugr fang,weapon,2,"10 ElderBark, 20 Silver, 2 DeerHide, 10 Guck"
+BowFineWood,Finewood bow,weapon,1,"10 FineWood, 10 RoundLog, 2 DeerHide"
+BowHuntsman,Huntsman bow,weapon,1,"10 FineWood, 20 Iron, 10 Feathers, 2 DeerHide"
+CapeDeerHide,Deer hide cape,armor,2,"4 DeerHide, 5 BoneFragments"
+CapeLinen,Linen cape,armor,2,"20 LinenThread, 1 Silver"
+CapeLox,Lox cape,armor,2,"6 LoxPelt, 2 Silver"
+CapeTrollHide,Troll hide cape,armor,3,"10 TrollHide, 10 BoneFragments"
+CapeWolf,Wolf fur cape,armor,2,"6 WolfPelt, 4 Silver, 1 TrophyWolf"
+Club,Club,weapon,,6 Wood
+Cultivator,Cultivator,tool,1,"5 RoundLog, 5 Bronze"
+Hammer,Hammer,tool,,"3 Wood, 2 Stone"
+HelmetBronze,Bronze helmet,armor,1,"5 Bronze, 2 DeerHide"
+HelmetDrake,Drake helmet,armor,1,"20 Silver, 2 WolfPelt, 2 TrophyHatchling"
+HelmetIron,Iron helmet,armor,1,"20 Iron, 2 DeerHide"
+HelmetLeather,Leather helmet,armor,2,6 DeerHide
+HelmetPadded,Padded helmet,armor,1,"10 Iron, 15 LinenThread"
+HelmetTrollLeather,Troll leather helmet,armor,3,"5 TrollHide, 3 BoneFragments"
+Hoe,Hoe,tool,1,"5 Wood, 2 Stone"
+IronNails,Iron nails x20,resource,1,1 Iron
+KnifeBlackMetal,Blackmetal knife,weapon,4,"4 FineWood, 10 BlackMetal, 5 LinenThread"
+KnifeChitin,Abyssal razor,weapon,2,"4 FineWood, 20 Chitin, 2 LeatherScraps"
+KnifeCopper,Copper knife,weapon,1,"2 Wood, 8 Copper"
+KnifeFlint,Flint knife,weapon,1,"2 Wood, 4 Flint, 2 LeatherScraps"
+MaceBronze,Bronze mace,weapon,1,"4 Wood, 8 Bronze, 3 LeatherScraps"
+MaceIron,Iron mace,weapon,2,"4 Wood, 20 Iron, 3 LeatherScraps"
+MaceNeedle,Porcupine,weapon,4,"5 FineWood, 20 Iron, 5 Needle, 10 LinenThread"
+MaceSilver,Frostner,weapon,3,"10 ElderBark, 30 Silver, 5 YmirRemains, 5 FreezeGland"
+PickaxeAntler,Antler pickaxe,tool,1,"10 Wood, 1 HardAntler"
+PickaxeBronze,Bronze pickaxe,tool,1,"3 RoundLog, 10 Bronze"
+PickaxeIron,Iron pickaxe,tool,2,"3 RoundLog, 20 Iron"
+ShieldBanded,Banded shield,weapon,2,"10 FineWood, 8 Iron"
+ShieldBlackmetal,Black metal shield,weapon,3,"10 FineWood, 8 BlackMetal, 5 Chain"
+ShieldBlackmetalTower,Black metal tower shield,weapon,3,"10 FineWood, 10 BlackMetal, 7 Chain"
+ShieldBronzeBuckler,Bronze buckler,weapon,1,"10 Bronze, 4 Wood"
+ShieldIronTower,Iron tower shield,weapon,2,"15 FineWood, 10 Iron"
+ShieldSerpentscale,Serpent scale shield,weapon,3,"10 FineWood, 4 Iron, 8 SerpentScale"
+ShieldSilver,Silver shield,weapon,3,"10 FineWood, 8 Silver"
+ShieldWood,Wood shield,weapon,1,"10 Wood, 4 Resin, 4 LeatherScraps"
+ShieldWoodTower,Wood tower shield,weapon,1,"10 Wood, 6 LeatherScraps"
+SledgeIron,Iron sledge,weapon,2,"10 ElderBark, 30 Iron, 4 YmirRemains, 1 TrophyDraugrElite"
+SledgeStagbreaker,Stagbreaker,weapon,2,"20 RoundLog, 5 TrophyDeer, 2 LeatherScraps"
+SpearBronze,Bronze spear,weapon,1,"5 Wood, 6 Bronze, 2 DeerHide"
+SpearChitin,Abyssal harpoon,weapon,2,"8 FineWood, 30 Chitin, 4 LeatherScraps"
+SpearElderBark,Ancient bark spear,weapon,3,"4 TrollHide, 10 Iron, 10 ElderBark"
+SpearFlint,Flint spear,weapon,1,"5 Wood, 10 Flint, 2 LeatherScraps"
+SpearWolfFang,Fang spear,weapon,3,"10 ElderBark, 4 WolfFang, 2 LeatherScraps, 2 Silver"
+SwordBlackmetal,Blackmetal sword,weapon,4,"2 FineWood, 20 BlackMetal, 5 LinenThread"
+SwordBronze,Bronze sword,weapon,1,"2 Wood, 8 Bronze, 2 LeatherScraps"
+SwordIron,Iron sword,weapon,2,"2 Wood, 20 Iron, 3 LeatherScraps"
+SwordSilver,Silver sword,weapon,3,"2 Wood, 40 Silver, 3 LeatherScraps, 5 Iron"

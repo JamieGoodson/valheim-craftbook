@@ -37,12 +37,15 @@ import gameItems from "@/assets/game-items.json";
 import { GameItem, GameItems, GameItemRequirement, GameItemType } from "@/shared-types";
 
 const gameItemIdsByType: { [key in GameItemType]: string[] } = {
+  [GameItemType.AMMO]: [],
+  [GameItemType.ARMOR]: [],
   [GameItemType.RESOURCE]: [],
   [GameItemType.TOOL]: [],
+  [GameItemType.TROPHY]: [],
   [GameItemType.WEAPON]: [],
-  [GameItemType.ARMOR]: [],
 };
 
+// Store game items by type
 for (const [id, gameItem] of Object.entries(gameItems)) {
   const type = gameItem.type as GameItemType;
   gameItemIdsByType[type].push(id);

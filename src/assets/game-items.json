@@ -54,8 +54,8 @@
     "name": "Cooked lox meat",
     "type": "resource"
   },
-  "SeprentMeat": {
-    "id": "SeprentMeat",
+  "SerpentMeat": {
+    "id": "SerpentMeat",
     "name": "Cooked serpent meat",
     "type": "resource"
   },
@@ -72,11 +72,6 @@
   "DeerHide": {
     "id": "DeerHide",
     "name": "Deer hide",
-    "type": "resource"
-  },
-  "TrophyDraugrElite": {
-    "id": "TrophyDraugrElite",
-    "name": "Draugr elite trophy",
     "type": "resource"
   },
   "Entrails": {
@@ -204,11 +199,6 @@
     "name": "Wolf pelt",
     "type": "resource"
   },
-  "TrophyWolf": {
-    "id": "TrophyWolf",
-    "name": "Wolf trophy",
-    "type": "resource"
-  },
   "Wood": {
     "id": "Wood",
     "name": "Wood",
@@ -260,6 +250,91 @@
     ],
     "tier": 1
   },
+  "BronzeX5": {
+    "id": "BronzeX5",
+    "name": "Bronze x5",
+    "type": "resource",
+    "requirements": [
+      {
+        "id": "Copper",
+        "quantity": 10
+      },
+      {
+        "id": "Tin",
+        "quantity": 5
+      }
+    ],
+    "tier": 1
+  },
+  "BronzeNails": {
+    "id": "BronzeNails",
+    "name": "Bronze nails x20",
+    "type": "resource",
+    "requirements": [
+      {
+        "id": "Bronze",
+        "quantity": 1
+      }
+    ],
+    "tier": 1
+  },
+  "SharpeningStone": {
+    "id": "SharpeningStone",
+    "name": "Sharpening stone",
+    "type": "resource",
+    "requirements": [
+      {
+        "id": "Stone",
+        "quantity": 5
+      }
+    ],
+    "tier": 1
+  },
+  "Chain": {
+    "id": "Chain",
+    "name": "Chain",
+    "type": "resource"
+  },
+  "Needle": {
+    "id": "Needle",
+    "name": "Needle",
+    "type": "resource"
+  },
+  "Obsidian": {
+    "id": "Obsidian",
+    "name": "Obsidian",
+    "type": "resource"
+  },
+  "BlackMetal": {
+    "id": "BlackMetal",
+    "name": "Black metal",
+    "type": "resource"
+  },
+  "LinenThread": {
+    "id": "LinenThread",
+    "name": "Linen thread",
+    "type": "resource"
+  },
+  "TrophyWolf": {
+    "id": "TrophyWolf",
+    "name": "Wolf trophy",
+    "type": "trophy"
+  },
+  "TrophyHatchling": {
+    "id": "TrophyHatchling",
+    "name": "Drake trophy",
+    "type": "trophy"
+  },
+  "TrophyDraugrElite": {
+    "id": "TrophyDraugrElite",
+    "name": "Draugr Elite trophy",
+    "type": "trophy"
+  },
+  "TrophyDeer": {
+    "id": "TrophyDeer",
+    "name": "Deer trophy",
+    "type": "trophy"
+  },
   "ArmorLeatherChest": {
     "id": "ArmorLeatherChest",
     "name": "Leather tunic",
@@ -308,6 +383,445 @@
     ],
     "tier": 1
   },
+  "ArmorBronzeChest": {
+    "id": "ArmorBronzeChest",
+    "name": "Bronze plate cuirass",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Bronze",
+        "quantity": 5
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "ArmorBronzeLegs": {
+    "id": "ArmorBronzeLegs",
+    "name": "Bronze plate leggings",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Bronze",
+        "quantity": 5
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "ArmorTrollChest": {
+    "id": "ArmorTrollChest",
+    "name": "Troll leather tunic",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "TrollHide",
+        "quantity": 5
+      }
+    ],
+    "tier": 3
+  },
+  "ArmorTrollLegs": {
+    "id": "ArmorTrollLegs",
+    "name": "Troll leather pants",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "TrollHide",
+        "quantity": 5
+      }
+    ],
+    "tier": 3
+  },
+  "ArmorIronChest": {
+    "id": "ArmorIronChest",
+    "name": "Iron scale mail",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "ArmorIronLegs": {
+    "id": "ArmorIronLegs",
+    "name": "Iron greaves",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "Torch": {
+    "id": "Torch",
+    "name": "Torch",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 1
+      },
+      {
+        "id": "Resin",
+        "quantity": 1
+      }
+    ]
+  },
+  "ArmorWolfChest": {
+    "id": "ArmorWolfChest",
+    "name": "Wolf armor chest",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Silver",
+        "quantity": 20
+      },
+      {
+        "id": "WolfPelt",
+        "quantity": 5
+      },
+      {
+        "id": "Chain",
+        "quantity": 1
+      }
+    ],
+    "tier": 2
+  },
+  "ArmorWolfLegs": {
+    "id": "ArmorWolfLegs",
+    "name": "Wolf armor legs",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Silver",
+        "quantity": 20
+      },
+      {
+        "id": "WolfPelt",
+        "quantity": 5
+      },
+      {
+        "id": "WolfFang",
+        "quantity": 4
+      }
+    ],
+    "tier": 2
+  },
+  "ArrowBronze": {
+    "id": "ArrowBronze",
+    "name": "Bronzehead arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Bronze",
+        "quantity": 1
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "ArrowFire": {
+    "id": "ArrowFire",
+    "name": "Fire arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Resin",
+        "quantity": 8
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "ArrowFlint": {
+    "id": "ArrowFlint",
+    "name": "Flinthead arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Flint",
+        "quantity": 2
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "ArrowFrost": {
+    "id": "ArrowFrost",
+    "name": "Frost arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Obsidian",
+        "quantity": 4
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      },
+      {
+        "id": "FreezeGland",
+        "quantity": 1
+      }
+    ],
+    "tier": 4
+  },
+  "ArrowIron": {
+    "id": "ArrowIron",
+    "name": "Ironhead arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Iron",
+        "quantity": 1
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "ArrowNeedle": {
+    "id": "ArrowNeedle",
+    "name": "Needle arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Needle",
+        "quantity": 4
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 4
+  },
+  "ArrowObsidian": {
+    "id": "ArrowObsidian",
+    "name": "Obsidian arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Obsidian",
+        "quantity": 4
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 3
+  },
+  "ArrowPoisin": {
+    "id": "ArrowPoisin",
+    "name": "Poisin arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Obsidian",
+        "quantity": 5
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      },
+      {
+        "id": "Ooze",
+        "quantity": 2
+      }
+    ],
+    "tier": 3
+  },
+  "ArrowSilver": {
+    "id": "ArrowSilver",
+    "name": "Silver arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      },
+      {
+        "id": "Silver",
+        "quantity": 1
+      },
+      {
+        "id": "Feathers",
+        "quantity": 2
+      }
+    ],
+    "tier": 3
+  },
+  "ArrowWood": {
+    "id": "ArrowWood",
+    "name": "Wood arrow x20",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 8
+      }
+    ],
+    "tier": 1
+  },
+  "AtgeirBlackmetal": {
+    "id": "AtgeirBlackmetal",
+    "name": "Blackmetal atgeir",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 30
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 5
+      }
+    ],
+    "tier": 4
+  },
+  "AtgeirBronze": {
+    "id": "AtgeirBronze",
+    "name": "Bronze atgeir",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "Bronze",
+        "quantity": 8
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "AtgeirIron": {
+    "id": "AtgeirIron",
+    "name": "Iron atgeir",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "Iron",
+        "quantity": 30
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "AxeBlackMetal": {
+    "id": "AxeBlackMetal",
+    "name": "Blackmetal axe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 6
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 20
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 5
+      }
+    ],
+    "tier": 4
+  },
+  "AxeBronze": {
+    "id": "AxeBronze",
+    "name": "Bronze axe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 4
+      },
+      {
+        "id": "Bronze",
+        "quantity": 8
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
   "AxeFlint": {
     "id": "AxeFlint",
     "name": "Flint axe",
@@ -323,5 +837,1018 @@
       }
     ],
     "tier": 1
+  },
+  "AxeIron": {
+    "id": "AxeIron",
+    "name": "Iron axe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 4
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "AxeStone": {
+    "id": "AxeStone",
+    "name": "Sont axe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 5
+      },
+      {
+        "id": "Stone",
+        "quantity": 4
+      }
+    ]
+  },
+  "Battleaxe": {
+    "id": "Battleaxe",
+    "name": "Battleaxe",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "ElderBark",
+        "quantity": 30
+      },
+      {
+        "id": "Iron",
+        "quantity": 35
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 4
+      }
+    ],
+    "tier": 2
+  },
+  "BombOoze": {
+    "id": "BombOoze",
+    "name": "Ooze bomb x5",
+    "type": "ammo",
+    "requirements": [
+      {
+        "id": "LeatherScraps",
+        "quantity": 5
+      },
+      {
+        "id": "Ooze",
+        "quantity": 10
+      },
+      {
+        "id": "Resin",
+        "quantity": 3
+      }
+    ],
+    "tier": 1
+  },
+  "Bow": {
+    "id": "Bow",
+    "name": "Crude bow",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 8
+      }
+    ],
+    "tier": 1
+  },
+  "BowDraugrFang": {
+    "id": "BowDraugrFang",
+    "name": "Draugr fang",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "ElderBark",
+        "quantity": 10
+      },
+      {
+        "id": "Silver",
+        "quantity": 20
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      },
+      {
+        "id": "Guck",
+        "quantity": 10
+      }
+    ],
+    "tier": 2
+  },
+  "BowFineWood": {
+    "id": "BowFineWood",
+    "name": "Finewood bow",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "RoundLog",
+        "quantity": 10
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "BowHuntsman": {
+    "id": "BowHuntsman",
+    "name": "Huntsman bow",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "Feathers",
+        "quantity": 10
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "CapeDeerHide": {
+    "id": "CapeDeerHide",
+    "name": "Deer hide cape",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "DeerHide",
+        "quantity": 4
+      },
+      {
+        "id": "BoneFragments",
+        "quantity": 5
+      }
+    ],
+    "tier": 2
+  },
+  "CapeLinen": {
+    "id": "CapeLinen",
+    "name": "Linen cape",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "LinenThread",
+        "quantity": 20
+      },
+      {
+        "id": "Silver",
+        "quantity": 1
+      }
+    ],
+    "tier": 2
+  },
+  "CapeLox": {
+    "id": "CapeLox",
+    "name": "Lox cape",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "LoxPelt",
+        "quantity": 6
+      },
+      {
+        "id": "Silver",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "CapeTrollHide": {
+    "id": "CapeTrollHide",
+    "name": "Troll hide cape",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "TrollHide",
+        "quantity": 10
+      },
+      {
+        "id": "BoneFragments",
+        "quantity": 10
+      }
+    ],
+    "tier": 3
+  },
+  "CapeWolf": {
+    "id": "CapeWolf",
+    "name": "Wolf fur cape",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "WolfPelt",
+        "quantity": 6
+      },
+      {
+        "id": "Silver",
+        "quantity": 4
+      },
+      {
+        "id": "TrophyWolf",
+        "quantity": 1
+      }
+    ],
+    "tier": 2
+  },
+  "Club": {
+    "id": "Club",
+    "name": "Club",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 6
+      }
+    ]
+  },
+  "Cultivator": {
+    "id": "Cultivator",
+    "name": "Cultivator",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "RoundLog",
+        "quantity": 5
+      },
+      {
+        "id": "Bronze",
+        "quantity": 5
+      }
+    ],
+    "tier": 1
+  },
+  "Hammer": {
+    "id": "Hammer",
+    "name": "Hammer",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 3
+      },
+      {
+        "id": "Stone",
+        "quantity": 2
+      }
+    ]
+  },
+  "HelmetBronze": {
+    "id": "HelmetBronze",
+    "name": "Bronze helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Bronze",
+        "quantity": 5
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "HelmetDrake": {
+    "id": "HelmetDrake",
+    "name": "Drake helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Silver",
+        "quantity": 20
+      },
+      {
+        "id": "WolfPelt",
+        "quantity": 2
+      },
+      {
+        "id": "TrophyHatchling",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "HelmetIron": {
+    "id": "HelmetIron",
+    "name": "Iron helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "HelmetLeather": {
+    "id": "HelmetLeather",
+    "name": "Leather helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "DeerHide",
+        "quantity": 6
+      }
+    ],
+    "tier": 2
+  },
+  "HelmetPadded": {
+    "id": "HelmetPadded",
+    "name": "Padded helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 10
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 15
+      }
+    ],
+    "tier": 1
+  },
+  "HelmetTrollLeather": {
+    "id": "HelmetTrollLeather",
+    "name": "Troll leather helmet",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "TrollHide",
+        "quantity": 5
+      },
+      {
+        "id": "BoneFragments",
+        "quantity": 3
+      }
+    ],
+    "tier": 3
+  },
+  "Hoe": {
+    "id": "Hoe",
+    "name": "Hoe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 5
+      },
+      {
+        "id": "Stone",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "IronNails": {
+    "id": "IronNails",
+    "name": "Iron nails x20",
+    "type": "resource",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 1
+      }
+    ],
+    "tier": 1
+  },
+  "KnifeBlackMetal": {
+    "id": "KnifeBlackMetal",
+    "name": "Blackmetal knife",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 4
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 10
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 5
+      }
+    ],
+    "tier": 4
+  },
+  "KnifeChitin": {
+    "id": "KnifeChitin",
+    "name": "Abyssal razor",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 4
+      },
+      {
+        "id": "Chitin",
+        "quantity": 20
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "KnifeCopper": {
+    "id": "KnifeCopper",
+    "name": "Copper knife",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 2
+      },
+      {
+        "id": "Copper",
+        "quantity": 8
+      }
+    ],
+    "tier": 1
+  },
+  "KnifeFlint": {
+    "id": "KnifeFlint",
+    "name": "Flint knife",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 2
+      },
+      {
+        "id": "Flint",
+        "quantity": 4
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "MaceBronze": {
+    "id": "MaceBronze",
+    "name": "Bronze mace",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 4
+      },
+      {
+        "id": "Bronze",
+        "quantity": 8
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 3
+      }
+    ],
+    "tier": 1
+  },
+  "MaceIron": {
+    "id": "MaceIron",
+    "name": "Iron mace",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 4
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 3
+      }
+    ],
+    "tier": 2
+  },
+  "MaceNeedle": {
+    "id": "MaceNeedle",
+    "name": "Porcupine",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 5
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "Needle",
+        "quantity": 5
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 10
+      }
+    ],
+    "tier": 4
+  },
+  "MaceSilver": {
+    "id": "MaceSilver",
+    "name": "Frostner",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "ElderBark",
+        "quantity": 10
+      },
+      {
+        "id": "Silver",
+        "quantity": 30
+      },
+      {
+        "id": "YmirRemains",
+        "quantity": 5
+      },
+      {
+        "id": "FreezeGland",
+        "quantity": 5
+      }
+    ],
+    "tier": 3
+  },
+  "PickaxeAntler": {
+    "id": "PickaxeAntler",
+    "name": "Antler pickaxe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "HardAntler",
+        "quantity": 1
+      }
+    ],
+    "tier": 1
+  },
+  "PickaxeBronze": {
+    "id": "PickaxeBronze",
+    "name": "Bronze pickaxe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "RoundLog",
+        "quantity": 3
+      },
+      {
+        "id": "Bronze",
+        "quantity": 10
+      }
+    ],
+    "tier": 1
+  },
+  "PickaxeIron": {
+    "id": "PickaxeIron",
+    "name": "Iron pickaxe",
+    "type": "tool",
+    "requirements": [
+      {
+        "id": "RoundLog",
+        "quantity": 3
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      }
+    ],
+    "tier": 2
+  },
+  "ShieldBanded": {
+    "id": "ShieldBanded",
+    "name": "Banded shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "Iron",
+        "quantity": 8
+      }
+    ],
+    "tier": 2
+  },
+  "ShieldBlackmetal": {
+    "id": "ShieldBlackmetal",
+    "name": "Black metal shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 8
+      },
+      {
+        "id": "Chain",
+        "quantity": 5
+      }
+    ],
+    "tier": 3
+  },
+  "ShieldBlackmetalTower": {
+    "id": "ShieldBlackmetalTower",
+    "name": "Black metal tower shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 10
+      },
+      {
+        "id": "Chain",
+        "quantity": 7
+      }
+    ],
+    "tier": 3
+  },
+  "ShieldBronzeBuckler": {
+    "id": "ShieldBronzeBuckler",
+    "name": "Bronze buckler",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Bronze",
+        "quantity": 10
+      },
+      {
+        "id": "Wood",
+        "quantity": 4
+      }
+    ],
+    "tier": 1
+  },
+  "ShieldIronTower": {
+    "id": "ShieldIronTower",
+    "name": "Iron tower shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 15
+      },
+      {
+        "id": "Iron",
+        "quantity": 10
+      }
+    ],
+    "tier": 2
+  },
+  "ShieldSerpentscale": {
+    "id": "ShieldSerpentscale",
+    "name": "Serpent scale shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "Iron",
+        "quantity": 4
+      },
+      {
+        "id": "SerpentScale",
+        "quantity": 8
+      }
+    ],
+    "tier": 3
+  },
+  "ShieldSilver": {
+    "id": "ShieldSilver",
+    "name": "Silver shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 10
+      },
+      {
+        "id": "Silver",
+        "quantity": 8
+      }
+    ],
+    "tier": 3
+  },
+  "ShieldWood": {
+    "id": "ShieldWood",
+    "name": "Wood shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "Resin",
+        "quantity": 4
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 4
+      }
+    ],
+    "tier": 1
+  },
+  "ShieldWoodTower": {
+    "id": "ShieldWoodTower",
+    "name": "Wood tower shield",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 10
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 6
+      }
+    ],
+    "tier": 1
+  },
+  "SledgeIron": {
+    "id": "SledgeIron",
+    "name": "Iron sledge",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "ElderBark",
+        "quantity": 10
+      },
+      {
+        "id": "Iron",
+        "quantity": 30
+      },
+      {
+        "id": "YmirRemains",
+        "quantity": 4
+      },
+      {
+        "id": "TrophyDraugrElite",
+        "quantity": 1
+      }
+    ],
+    "tier": 2
+  },
+  "SledgeStagbreaker": {
+    "id": "SledgeStagbreaker",
+    "name": "Stagbreaker",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "RoundLog",
+        "quantity": 20
+      },
+      {
+        "id": "TrophyDeer",
+        "quantity": 5
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 2
+  },
+  "SpearBronze": {
+    "id": "SpearBronze",
+    "name": "Bronze spear",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 5
+      },
+      {
+        "id": "Bronze",
+        "quantity": 6
+      },
+      {
+        "id": "DeerHide",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "SpearChitin": {
+    "id": "SpearChitin",
+    "name": "Abyssal harpoon",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 8
+      },
+      {
+        "id": "Chitin",
+        "quantity": 30
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 4
+      }
+    ],
+    "tier": 2
+  },
+  "SpearElderBark": {
+    "id": "SpearElderBark",
+    "name": "Ancient bark spear",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "TrollHide",
+        "quantity": 4
+      },
+      {
+        "id": "Iron",
+        "quantity": 10
+      },
+      {
+        "id": "ElderBark",
+        "quantity": 10
+      }
+    ],
+    "tier": 3
+  },
+  "SpearFlint": {
+    "id": "SpearFlint",
+    "name": "Flint spear",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 5
+      },
+      {
+        "id": "Flint",
+        "quantity": 10
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "SpearWolfFang": {
+    "id": "SpearWolfFang",
+    "name": "Fang spear",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "ElderBark",
+        "quantity": 10
+      },
+      {
+        "id": "WolfFang",
+        "quantity": 4
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      },
+      {
+        "id": "Silver",
+        "quantity": 2
+      }
+    ],
+    "tier": 3
+  },
+  "SwordBlackmetal": {
+    "id": "SwordBlackmetal",
+    "name": "Blackmetal sword",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "FineWood",
+        "quantity": 2
+      },
+      {
+        "id": "BlackMetal",
+        "quantity": 20
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 5
+      }
+    ],
+    "tier": 4
+  },
+  "SwordBronze": {
+    "id": "SwordBronze",
+    "name": "Bronze sword",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 2
+      },
+      {
+        "id": "Bronze",
+        "quantity": 8
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 2
+      }
+    ],
+    "tier": 1
+  },
+  "SwordIron": {
+    "id": "SwordIron",
+    "name": "Iron sword",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 2
+      },
+      {
+        "id": "Iron",
+        "quantity": 20
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 3
+      }
+    ],
+    "tier": 2
+  },
+  "SwordSilver": {
+    "id": "SwordSilver",
+    "name": "Silver sword",
+    "type": "weapon",
+    "requirements": [
+      {
+        "id": "Wood",
+        "quantity": 2
+      },
+      {
+        "id": "Silver",
+        "quantity": 40
+      },
+      {
+        "id": "LeatherScraps",
+        "quantity": 3
+      },
+      {
+        "id": "Iron",
+        "quantity": 5
+      }
+    ],
+    "tier": 3
   }
 }

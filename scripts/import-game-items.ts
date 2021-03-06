@@ -11,13 +11,17 @@ type Row = {
 }
 
 const gameItemTypeByString: { [key: string]: GameItemType } = {
+  'ammo': GameItemType.AMMO,
+  'armor': GameItemType.ARMOR,
   'resource': GameItemType.RESOURCE,
   'tool': GameItemType.TOOL,
+  'trophy': GameItemType.TROPHY,
   'weapon': GameItemType.WEAPON,
-  'armor': GameItemType.ARMOR,
 }
 
 const OUTPUT_JSON_FILE_PATH = './src/assets/game-items.json';
+
+const gameItems: GameItems = {};
 
 /**
  * Parses a requirements string into an array of objects.
@@ -37,6 +41,11 @@ function parseRequirements(requirements: string): GameItemRequirement[] {
 
   return pairs.map(pair => {
     let [ quantity, itemId ] = pair.trim().split(' ');
+    itemId = itemId.trim();
+
+    if (!(itemId in gameItems)) {
+      throw new Error(`Item ID not found: ${itemId}`);
+    }
     return { id: itemId.trim(), quantity: parseInt(quantity.trim(), 10) };
   });
 }
@@ -47,7 +56,7 @@ function parseRequirements(requirements: string): GameItemRequirement[] {
  * @param row The raw game item (row) from the CSV.
  */
 function convertRowToGameItem(row: Row): GameItem | undefined {
-  const { id, name, requirements, tier, type } = row;
+  const { id, name, requirements, tier, type } = sanitizeRow(row);
 
   if (!id || !name || !type) {
     console.warn(`Skipping item with missing fields`);
@@ -76,6 +85,14 @@ function convertRowToGameItem(row: Row): GameItem | undefined {
   return gameItem;
 }
 
+function sanitizeRow(row: Row): Row {
+  const sanitizedRow = {} as Row;
+  for (const [key, value] of Object.entries(row)) {
+    sanitizedRow[key] = value.trim();
+  }
+  return sanitizedRow;
+}
+
 /**
  * Imports game items from a CSV and saves them into a JSON file.
  */
@@ -83,7 +100,6 @@ function main() {
   console.log('Parsing CSV');
 
   let rowCount = 0;
-  const gameItems: GameItems = {};
   fs.createReadStream('./scripts/game-items.csv')
   .pipe(csv())
   .on('data', row => {
@@ -91,11 +107,15 @@ function main() {
     const gameItem = convertRowToGameItem(row);
 
     if (gameItem) {
-      gameItems[gameItem.id] = gameItem
+      const itemId = gameItem.id;
+      if (itemId in gameItems) {
+        throw new Error(`Duplicate item ID: ${itemId}`);
+      } 
+      gameItems[itemId] = gameItem;
     };
   })
   .on('end', () => {
-    console.log(`\nImported ${gameItems.length}/${rowCount} rows`);
+    console.log(`\nImported ${Object.keys(gameItems).length}/${rowCount} rows`);
     console.log(`Saving to ${OUTPUT_JSON_FILE_PATH}`);
 
     fs.writeFileSync(
