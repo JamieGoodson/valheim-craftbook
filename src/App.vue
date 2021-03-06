@@ -11,9 +11,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $font-color-primary: #f7f7f7;
+$font-color-accent: #ffb572;
 $card-background-color: rgba(0, 0, 0, 0.6);
 $game-item-background-color: #000;
 $text-shadow: 0.1rem 0.1rem 0.2rem #000;
+$nav-height: 10rem;
 
 html {
   font-size: 10px; // Now 1 rem = 10px
@@ -22,20 +24,45 @@ html {
 body {
   background: url("./assets/bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   color: $font-color-primary;
   font-family: 'Roboto', serif;
   font-size: 1.5rem;
 }
 
-ul {
+.game-items-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-items-list {
   list-style-type: none;
   margin: 0 5rem 0 0;
-  padding: 0;
+  overflow-y: auto;
+  padding: 0 1rem 0 0;
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: none;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: #808080;
+    }
+  }
 }
 
 #nav {
-  padding: 30px;
+  box-sizing: border-box;
+  height: $nav-height;
+  padding: 2rem;
 
   a {
     color: $font-color-primary;
@@ -48,12 +75,15 @@ ul {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 120rem;
+  height: calc(100vh - #{$nav-height});
 }
 
 .header {
-  color: #ffb572;
+  color: $font-color-accent;
   font-family: "IM Fell English SC", serif;
   margin: 0;
   text-shadow: $text-shadow;
@@ -96,7 +126,7 @@ ul {
 }
 
 .selected-game-item-container {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   justify-content: space-between;
 
   .selected-game-item {
@@ -126,16 +156,37 @@ ul {
 }
 
 .game-items-container {
+  margin-bottom: 3rem;
+  height: 0;
+  flex: 1;
+  justify-content: space-between;
+
   .item-icon {
     height: 4rem;
     width: 4rem;
   }
 
   li {
+    &:first-child {
+      margin: 0 0 2rem 0;
+    }
+
+    &:last-child {
+      margin: 2rem 0 0 0;
+    }
+
+    &:hover {
+      background-color: #b38050;
+      border-color: #e6a467;
+    }
+
     align-items: center;
+    box-sizing: border-box;
+    cursor: default;
     display: flex;
     margin: 2rem 0;
-    cursor: default;
+    width: 20rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0);
   }
 
   .header {
