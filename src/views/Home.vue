@@ -23,9 +23,12 @@
         </ul>
       </div>
     </div>
+
     <div class="game-items-container">
+      <GameItemList @itemClick="onGameItemClick" type="weapon" title="Weapons" />
       <GameItemList @itemClick="onGameItemClick" type="armor" title="Armor" />
       <GameItemList @itemClick="onGameItemClick" type="tool" title="Tools" />
+      <GameItemList @itemClick="onGameItemClick" type="ammo" title="Ammo" />
     </div>
   </div>
 </template>
@@ -45,8 +48,14 @@ const gameItemIdsByType: { [key in GameItemType]: string[] } = {
   [GameItemType.WEAPON]: [],
 };
 
+const gameItemsSorted = Object.entries(gameItems).sort((a, b) => {
+  const gameItemA = a[1] as GameItem;
+  const gameItemB = b[1] as GameItem;
+  return gameItemA.name > gameItemB.name ? 1 : (gameItemB.name > gameItemA.name) ? -1 : 0;
+});
+
 // Store game items by type
-for (const [id, gameItem] of Object.entries(gameItems)) {
+for (const [id, gameItem] of gameItemsSorted) {
   const type = gameItem.type as GameItemType;
   gameItemIdsByType[type].push(id);
 }
