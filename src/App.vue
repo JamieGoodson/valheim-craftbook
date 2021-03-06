@@ -13,7 +13,6 @@
 $font-color-primary: #f7f7f7;
 $font-color-accent: #ffb572;
 $card-background-color: rgba(0, 0, 0, 0.6);
-$game-item-background-color: #000;
 $text-shadow: 0.1rem 0.1rem 0.2rem #000;
 $nav-height: 10rem;
 
@@ -90,15 +89,16 @@ body {
 }
 
 .item-icon {
-  background-color: $game-item-background-color;
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: inline-block;
   margin-right: 2rem;
-}
 
-.item-icon-image {
-  border: 0;
-  height: 100%;
-  width: 100%;
+  // It looks like the game applies some additional filtering to the icons,
+  // so we try to replicate that here
+  filter: brightness(1.05) saturate(1.05) contrast(1.05);
 }
 
 .requirement-name, .requirement-quantity {
@@ -106,7 +106,7 @@ body {
   position: absolute;
   right: 0;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-shadow: $text-shadow;
 }
 
@@ -126,26 +126,37 @@ body {
 }
 
 .selected-game-item-container {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   justify-content: space-between;
+
+  .game-items-list {
+    li.item-icon {
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 8rem;
+      position: relative;
+      width: 8rem;
+    }
+
+    div.item-icon {
+      height: 6rem;
+      padding: 1rem;
+      width: 6rem;
+    }
+  }
 
   .selected-game-item {
     align-items: center;
     display: flex;
     
     .item-icon {
-      height: 10rem;
-      width: 10rem;
+      height: 6rem;
+      margin-right: 4rem;
+      width: 6rem;
     }
   }
 
-  .item-icon {
-    height: 8rem;
-    position: relative;
-    width: 8rem;
-  }
-
   .header {
+    color: #ffce00;
     font-size: 4rem;
     width: 40rem;
   }
@@ -176,8 +187,8 @@ body {
     }
 
     &:hover {
-      background-color: #b38050;
-      border-color: #e6a467;
+      background-color: #c1812e;
+      border-color: #e69a37;
     }
 
     align-items: center;

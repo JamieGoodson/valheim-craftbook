@@ -2,18 +2,29 @@
   <div class="content home">
     <div class="selected-game-item-container">
       <div class="selected-game-item">
-        <div class="item-icon"></div>
-        <h3 class="header">{{ selectedGameItem.name }}</h3>
+        <div
+          class="item-icon"
+          :style="
+            'background-image: url(' + getGameItemIconUrl(selectedGameItem.id) + ');'
+          "
+        ></div>
+        <h3 class="header">
+          <span v-if="selectedGameItem.id">{{ selectedGameItem.name }}</span>
+          <span v-else>Choose an item, Viking</span>
+        </h3>
       </div>
       <div>
-        <ul
-          class="game-items-list"
-          :set="(requirements = selectedGameItem.requirements)"
-        >
-          <li v-for="(_, index) in 4" v-bind:key="index">
-            <div class="item-icon">
+        <ul class="game-items-list" :set="(requirements = selectedGameItem.requirements)">
+          <li v-for="(_, index) in 4" v-bind:key="index" class="item-icon">
+            <div>
               <template v-if="requirements[index]">
-                <div :set="(requirement = requirements[index])">
+                <div
+                  :set="(requirement = requirements[index])"
+                  class="item-icon"
+                  :style="
+                    'background-image: url(' + getGameItemIconUrl(requirement.id) + ');'
+                  "
+                >
                   <div class="requirement-name">{{ gameItems[requirement.id].name }}</div>
                   <div class="requirement-quantity">{{ requirement.quantity }}</div>
                 </div>
@@ -51,7 +62,7 @@ const gameItemIdsByType: { [key in GameItemType]: string[] } = {
 const gameItemsSorted = Object.entries(gameItems).sort((a, b) => {
   const gameItemA = a[1] as GameItem;
   const gameItemB = b[1] as GameItem;
-  return gameItemA.name > gameItemB.name ? 1 : (gameItemB.name > gameItemA.name) ? -1 : 0;
+  return gameItemA.name > gameItemB.name ? 1 : gameItemB.name > gameItemA.name ? -1 : 0;
 });
 
 // Store game items by type
@@ -69,6 +80,11 @@ export default defineComponent({
     onGameItemClick(itemId: string) {
       const gameItem = gameItems[itemId] as GameItem;
       this.selectedGameItem = gameItem;
+    },
+    getGameItemIconUrl(itemId: string) {
+      if (!itemId) return '';
+
+      return require(`@/assets/game-item-icons/${itemId}.png`);
     },
   },
   data() {

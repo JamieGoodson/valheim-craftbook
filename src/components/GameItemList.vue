@@ -8,7 +8,12 @@
         :set="(item = this.$parent.gameItems[itemId])"
         @click="onGameItemClick(itemId)"
       >
-        <div class="item-icon"></div>
+        <div
+          class="item-icon"
+          :style="
+            'background-image: url(' + this.$parent.getGameItemIconUrl(itemId) + ');'
+          "
+        ></div>
         {{ item.name }}
       </li>
     </ul>

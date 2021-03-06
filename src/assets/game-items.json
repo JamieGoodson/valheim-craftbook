@@ -666,9 +666,9 @@
     ],
     "tier": 3
   },
-  "ArrowPoisin": {
-    "id": "ArrowPoisin",
-    "name": "Poisin arrow x20",
+  "ArrowPoison": {
+    "id": "ArrowPoison",
+    "name": "Poison arrow x20",
     "type": "ammo",
     "requirements": [
       {
@@ -860,7 +860,7 @@
   },
   "AxeStone": {
     "id": "AxeStone",
-    "name": "Sont axe",
+    "name": "Stone axe",
     "type": "tool",
     "requirements": [
       {
