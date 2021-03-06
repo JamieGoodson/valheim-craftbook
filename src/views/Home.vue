@@ -4,6 +4,7 @@
       <div class="selected-game-item">
         <div
           class="item-icon"
+          v-if="selectedGameItem.id"
           :style="
             'background-image: url(' + getGameItemIconUrl(selectedGameItem.id) + ');'
           "
@@ -15,6 +16,12 @@
       </div>
       <div>
         <ul class="game-items-list" :set="(requirements = selectedGameItem.requirements)">
+          <li
+            class="item-icon item-tier-icon"
+            :style="selectedGameItem.tier ? '' : 'background-image: none'"
+          >
+            <div>{{ selectedGameItem.tier }}</div>
+          </li>
           <li v-for="(_, index) in 4" v-bind:key="index" class="item-icon">
             <div>
               <template v-if="requirements[index]">
@@ -82,7 +89,7 @@ export default defineComponent({
       this.selectedGameItem = gameItem;
     },
     getGameItemIconUrl(itemId: string) {
-      if (!itemId) return '';
+      if (!itemId) return "";
 
       return require(`@/assets/game-item-icons/${itemId}.png`);
     },

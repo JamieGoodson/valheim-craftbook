@@ -1,20 +1,33 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <div class="logo">Valheim Craftbook</div>
+    <div class="nav-links">
+      <a href="https://github.com/jamiegdsn/valheim-craftbook" target="_blank"
+        ><img src="./assets/github-icon.png"
+      /></a>
+    </div>
   </div>
   <router-view />
 </template>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 $font-color-primary: #f7f7f7;
 $font-color-accent: #ffb572;
+$font-color-yellow: #ffce00;
 $card-background-color: rgba(0, 0, 0, 0.6);
 $text-shadow: 0.1rem 0.1rem 0.2rem #000;
-$nav-height: 10rem;
+$nav-height: 6rem;
+$nav-margin-bottom: 2rem;
+$nav-full-height: $nav-height + $nav-margin-bottom;
+
+@font-face {
+  font-family: Norse;
+  font-weight: bold;
+  src: url("./assets/Norsebold.otf");
+}
 
 html {
   font-size: 10px; // Now 1 rem = 10px
@@ -24,8 +37,49 @@ body {
   background: url("./assets/bg.jpg") no-repeat center center;
   background-size: cover;
   color: $font-color-primary;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-size: 1.5rem;
+}
+
+#nav {
+  background-color: #000;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Norse", "IM Fell English SC", serif;
+  font-weight: bold;
+  height: $nav-height;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  align-items: center;
+  margin-bottom: $nav-margin-bottom;
+  justify-content: space-between;
+
+  a {
+    color: $font-color-primary;
+    font-weight: bold;
+    text-decoration: none;
+
+    &.router-link-exact-active {
+      color: $font-color-primary;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  height: 100%;
+  text-align: right;
+
+  img {
+    height: 100%;
+  }
 }
 
 .game-items-list-container {
@@ -35,12 +89,11 @@ body {
 
 .game-items-list {
   list-style-type: none;
-  margin: 0 5rem 0 0;
   overflow-y: auto;
   padding: 0 1rem 0 0;
 
   &::-webkit-scrollbar {
-    width: .5rem;
+    width: 0.5rem;
   }
 
   &::-webkit-scrollbar-track {
@@ -58,27 +111,12 @@ body {
   }
 }
 
-#nav {
-  box-sizing: border-box;
-  height: $nav-height;
-  padding: 2rem;
-
-  a {
-    color: $font-color-primary;
-    font-weight: bold;
-
-    &.router-link-exact-active {
-      color: $font-color-primary;
-    }
-  }
-}
-
 .content {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 120rem;
-  height: calc(100vh - #{$nav-height});
+  height: calc(100vh - #{$nav-full-height});
 }
 
 .header {
@@ -88,7 +126,7 @@ body {
   text-shadow: $text-shadow;
 }
 
-.item-icon {
+.item-icon, .item-tier-icon {
   background-origin: content-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,13 +139,36 @@ body {
   filter: brightness(1.05) saturate(1.05) contrast(1.05);
 }
 
-.requirement-name, .requirement-quantity {
+.item-tier-icon {
+  align-items: center;
+  background-image: url('./assets/workstation-level-icon.png');
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: $font-color-yellow;
+  
+  // Adds an outline to the text
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+
+  div {
+    margin-top: 0.6rem; // Makes the text centered with the background icon
+  }
+}
+
+.requirement-name,
+.requirement-quantity {
   left: 0;
   position: absolute;
   right: 0;
   text-align: center;
   font-size: 1.3rem;
-  text-shadow: $text-shadow;
 }
 
 .requirement-name {
@@ -118,7 +179,8 @@ body {
   bottom: 0.5rem;
 }
 
-.game-items-container, .selected-game-item-container  {
+.game-items-container,
+.selected-game-item-container {
   background-color: $card-background-color;
   box-sizing: border-box;
   display: flex;
@@ -130,6 +192,14 @@ body {
   justify-content: space-between;
 
   .game-items-list {
+    li {
+      margin-right: 1rem;
+
+      &:first-child {
+        margin-right: 3rem;
+      }
+    }
+
     li.item-icon {
       background-color: rgba(0, 0, 0, 0.8);
       height: 8rem;
@@ -147,7 +217,7 @@ body {
   .selected-game-item {
     align-items: center;
     display: flex;
-    
+
     .item-icon {
       height: 6rem;
       margin-right: 4rem;
@@ -156,11 +226,11 @@ body {
   }
 
   .header {
-    color: #ffce00;
+    color: $font-color-yellow;
     font-size: 4rem;
     width: 40rem;
   }
-  
+
   ul {
     display: flex;
   }
@@ -171,6 +241,10 @@ body {
   height: 0;
   flex: 1;
   justify-content: space-between;
+
+  .game-items-list {
+    margin: 0 5rem 0 0;
+  }
 
   .item-icon {
     height: 4rem;
