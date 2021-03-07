@@ -359,6 +359,38 @@
     ],
     "tier": 2
   },
+  "ArmorPaddedCuirass": {
+    "id": "ArmorPaddedCuirass",
+    "name": "Padded cuirass",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 10
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 20
+      }
+    ],
+    "tier": 2
+  },
+  "ArmorPaddedGreaves": {
+    "id": "ArmorPaddedGreaves",
+    "name": "Padded greaves",
+    "type": "armor",
+    "requirements": [
+      {
+        "id": "Iron",
+        "quantity": 10
+      },
+      {
+        "id": "LinenThread",
+        "quantity": 20
+      }
+    ],
+    "tier": 2
+  },
   "ArmorRagsChest": {
     "id": "ArmorRagsChest",
     "name": "Rag tunic",

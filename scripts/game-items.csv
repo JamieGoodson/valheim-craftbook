@@ -61,6 +61,8 @@ TrophyDraugrElite,Draugr Elite trophy,trophy,,
 TrophyDeer,Deer trophy,trophy,,
 ArmorLeatherChest,Leather tunic,armor,2,6 DeerHide
 ArmorLeatherLegs,Leather pants,armor,2,6 DeerHide
+ArmorPaddedCuirass,Padded cuirass,armor,2,"10 Iron, 20 LinenThread"
+ArmorPaddedGreaves,Padded greaves,armor,2,"10 Iron, 20 LinenThread"
 ArmorRagsChest,Rag tunic,armor,1,5 LeatherScraps
 ArmorRagsLegs,Rag pants,armor,1,5 LeatherScraps
 ArmorBronzeChest,Bronze plate cuirass,armor,1,"5 Bronze, 2 DeerHide"
