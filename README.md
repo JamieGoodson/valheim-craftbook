@@ -1,5 +1,15 @@
 # Valheim Craftbook
 
+A Valheim recipe book for all your crafting needs.
+
+Currently only optimized for desktop and Chrome.
+
+## Future plans
+* Add building items (walls, furniture, etc)
+* Add food/cooking items
+* Add item stats (damage, weight, etc)
+* Add details for upgrades
+
 ## Project setup
 ```
 yarn install
