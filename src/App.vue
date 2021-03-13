@@ -10,6 +10,66 @@
   <router-view />
 </template>
 
+<script lang="ts">
+import { defineComponent } from "vue";
+import gameItems from "@/assets/game-items.json";
+import {
+  GameItem,
+  GameItems,
+  GameItemRequirement,
+  GameItemType,
+} from "@/shared-types";
+
+const gameItemIdsByType: { [key in GameItemType]: string[] } = {
+  [GameItemType.AMMO]: [],
+  [GameItemType.ARMOR]: [],
+  [GameItemType.RESOURCE]: [],
+  [GameItemType.TOOL]: [],
+  [GameItemType.TROPHY]: [],
+  [GameItemType.WEAPON]: [],
+};
+
+const gameItemsSorted = Object.entries(gameItems).sort((a, b) => {
+  const gameItemA = a[1] as GameItem;
+  const gameItemB = b[1] as GameItem;
+  return gameItemA.name > gameItemB.name
+    ? 1
+    : gameItemB.name > gameItemA.name
+    ? -1
+    : 0;
+});
+
+// Store game items by type
+for (const [id, gameItem] of gameItemsSorted) {
+  const type = gameItem.type as GameItemType;
+  gameItemIdsByType[type].push(id);
+}
+
+export default defineComponent({
+  name: "App",
+  methods: {
+    onGameItemClick(itemId: string) {
+      const gameItem = gameItems[itemId] as GameItem;
+      this.selectedGameItem = gameItem;
+    },
+    getGameItemIconUrl(itemId: string) {
+      if (!itemId) return "";
+
+      return require(`@/assets/game-item-icons/${itemId}.png`);
+    },
+  },
+  data() {
+    return {
+      gameItems,
+      gameItemIdsByType,
+      selectedGameItem: {
+        requirements: [] as GameItemRequirement[],
+      } as GameItem,
+    };
+  },
+});
+</script>
+
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -126,7 +186,8 @@ body {
   text-shadow: $text-shadow;
 }
 
-.item-icon, .item-tier-icon {
+.item-icon,
+.item-tier-icon {
   background-origin: content-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +202,7 @@ body {
 
 .item-tier-icon {
   align-items: center;
-  background-image: url('./assets/workstation-level-icon.png');
+  background-image: url("./assets/workstation-level-icon.png");
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -149,13 +210,10 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: $font-color-yellow;
-  
+
   // Adds an outline to the text
-  text-shadow:
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 
   div {
     margin-top: 0.6rem; // Makes the text centered with the background icon

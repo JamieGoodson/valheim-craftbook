@@ -3,15 +3,17 @@
     <h3 class="header">{{ title }}</h3>
     <ul class="game-items-list">
       <li
-        v-for="itemId in this.$parent.gameItemIdsByType[type]"
+        v-for="itemId in this.$root.gameItemIdsByType[type]"
         v-bind:key="itemId"
-        :set="(item = this.$parent.gameItems[itemId])"
+        :set="(item = this.$root.gameItems[itemId])"
         @click="onGameItemClick(itemId)"
       >
         <div
           class="item-icon"
           :style="
-            'background-image: url(' + this.$parent.getGameItemIconUrl(itemId) + ');'
+            'background-image: url(' +
+              this.$root.getGameItemIconUrl(itemId) +
+              ');'
           "
         ></div>
         {{ item.name }}
