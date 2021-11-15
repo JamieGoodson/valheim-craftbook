@@ -4,6 +4,8 @@ A Valheim recipe book for all your crafting needs.
 
 Currently only optimized for desktop and Chrome.
 
+[valheimcraftbook.com](https://www.valheimcraftbook.com/)
+
 ## Future plans
 * Add building items (walls, furniture, etc)
 * Add food/cooking items
